@@ -1,0 +1,10 @@
+*{padding: 0; margin: 0;}
+/*header*/
+#header{  }
+/*content*/
+.content{ padding-top: 40px; background: #f1f1f1; padding-bottom: 30px;}
+
+/*footer*/
+.link-lang{ padding: 10px 0 0 0; }
+.linkshort{ font-style: 13px; }
+.text-cop{ padding-top: 10px; }

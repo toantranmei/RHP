@@ -1,0 +1,30 @@
+/*box live chat*/
+.box-fr-chat{ overflow: hidden; padding: 15px; padding-bottom: 0; }
+p.title-box-chat {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+p.time-activity {
+    text-align: center;
+    font-size: 11px;
+}
+
+h1.name-person {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+.action-person li.list-inline-item {
+    width: 40px;
+    height: 40px;
+    background: #7bc77b;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100%;
+}
+.recently-chat-person{ margin: 0 -50px; }
+
+/*box search live chat*/
+.img-option-chat{ float: left; }
+.new-chat i{ font-size: 25px; color: #23acff; line-height: 30px; }
