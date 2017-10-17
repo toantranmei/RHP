@@ -252,3 +252,124 @@ body{ background: #1b9dff; width: 100%; height: 100%;  }
 .andi{
 	display: none;
 }
+
+/*<!-- ============================================
+		Start: Modal Login 
+	============================================ -->*/
+.modal-box-login{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	z-index: 200;
+	transition: all 0.3s ease;
+}
+.modal-box-login.active{
+	visibility: visible;
+	opacity: 1;
+}
+.modal-box-login .wrap-modal-login{
+	background: rgba(0,0,0,.3);
+	height: 100%;
+	padding-top: 40px;
+}
+.auth-box-w {
+    max-width: 450px;
+    z-index: 201;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.2);
+}
+.auth-box-w .logo-w {
+    text-align: center;
+    padding: 20%;
+}
+.auth-box-w .auth-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    padding-left: 80px;
+}
+.auth-box-w .auth-header:after {
+    content: "";
+    background-color: #047bf8;
+    width: 32px;
+    height: 7px;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 80px;
+}
+.auth-box-w form {
+    padding: 20px 80px 0 80px;
+    padding-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.auth-box-w form .form-group {
+    position: relative;
+}
+.auth-box-w label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: 700px;
+}
+.auth-box-w input{
+	font-size: 13px;
+}
+.auth-box-w .form-group .pre-icon {
+    position: absolute;
+    bottom: 5px;
+    font-size: 24px;
+    color: #047bf8;
+    left: -38px;
+}
+.auth-box-w .buttons-w {
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+.form-check-inline {
+    display: inline-block;
+}
+.link-signup{
+	text-align: center;
+	margin-top: 20px;
+	opacity: 0.7;
+}
+.link-signup a{
+	color: #0275d8;
+}
+.auth-box-w .form-check-inline {
+    margin-left: 1rem;
+}
+.auth-box-w button{
+	cursor: pointer;
+}
+.form-check-label {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.form-check-inline .form-check-label {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+

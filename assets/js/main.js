@@ -41,4 +41,15 @@ $(function () {
       return false;
     }
   });
+// #2. MODAL BOX LOGIN
+$(function () {
+  $('.btnSignIn').on('click', function () {
+    $('.modal-box-login').toggleClass('active');
+    $('.auth-box-w').focusout(function(event) {
+      console.log('hay');
+      $('.modal-box-login').removeClass('active');    
+    });
+    return false;
+  });
+});
 
