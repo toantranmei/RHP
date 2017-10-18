@@ -1,0 +1,32 @@
+Module: is a element contain array, when u want take a project, so u must split more workout to all members.
+Example: I want make a website about my blog.
+My work:
+Split all works to members:
+Members A: Code homepage.html
+So, He will must PTTKHT --> Database design  --> Code Front-End
+
+
+=======================
+Taskbar: Members
+=======================
+All Members
++ Take a CV by HTML and CSS or Javascript ( T7 - Tuan sau )
+
+Khanh:
++ homepagesocial.html
++ aboutus.html
+
+Phu:
++ Howitwork.html
+
+Hung:
++ introdemo.html
+
+Dung:
++ Support Khanh
+
+Toan:
++ homepage.html
++ addCategory.php
++ addPosts.php
++ PostBlog.php
