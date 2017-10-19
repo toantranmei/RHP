@@ -1,0 +1,89 @@
+*{
+	padding: 0; margin: 0; list-style: none; text-decoration: none; font-size: 13px; font-family: sans-serif;
+}
+
+/*css phan main chinh*/
+
+main.main { background: #dedede; position: relative; width: 100%; height: auto;}
+/*css col-md-3 phan to*/
+
+.col-md-3 { margin-left: 10px; top: 15px;}
+
+/*col-md-7 css - phan nho trong col-md-3, dau tien*/
+
+.col-md-7 a{ text-decoration: none;}
+
+/*<!-- ul chứa ảnh và tên - phan nho trong col-md-7-->*/
+
+ul.chua-anh-ten{ display: inline-block; margin-left: 5px;}
+
+ul li.list-inline-item{ display: inline-block; color: #333;}
+
+.avatar{ border-radius: 30px;}
+a.link-home{ padding:10px 5px ;}
+a.link-home:hover { background: #fff; border: 1px solid darkgray;}
+
+/*ul chứa bảng tin và tin nhắn - phan nho trong col-md-7*/
+a.link-news { color: #333;}
+i.fa.fa-bars { margin-right: 5px; color: cornflowerblue;}
+a.link-mess { color: #333;}
+i.fa.fa-comment { margin-right: 5px; color: cornflowerblue;}
+/*chua cac group va nhom - phan nho trong col-md-7*/
+h3.shortcuts { font-size: 15px; opacity: 0.9; float: left;}
+p.edit { float: right; padding-left: 70px; display: none; margin-bottom: 0;}
+ul.chua-shortcuts { clear: both;}
+h3.shortcuts:hover p.edit { display: block;}
+
+ul.chua-shortcuts a i { color: cornflowerblue;}
+
+ul.chua-shortcuts a { color: #333;}
+i.fa.fa-sort-desc { color: #888888;}
+ul.chua-shortcuts li a i { margin-right: 5px;}
+/*chứa các tìm tòi, khám phá - phan nho trong col-md-7*/
+h3.explore { font-size: 15px; opacity: 0.8; float: left;}
+h3.explore:hover p.edit { display: block;}
+.chua-explore{ clear: both;}
+ul.chua-explore li a i { margin-right: 5px; color: cornflowerblue;}
+
+ul.chua-explore li a { color: #333;}
+
+
+/*chua create*/
+a.nav-link { padding: 0; padding-right: 12px;
+}
+h3.create{ font-size: 15px; opacity: 0.8;
+}
+
+/*noi dung trang web*/
+.main{padding-top: 13px;}
+#content_person{ padding-top: 15px; }
+.file-cus{ position: relative; }
+.input-file{ cursor: pointer; text-indent: -103px; display: block; filter: alpha(opacity=0); min-height: 100%; max-width: 100%; opacity: 0; position: absolute; right: 0;text-align: right; top: 0; }
+.box-infor-short p{ margin-bottom: 5px; }
+.status-person{ margin-top: 15px; }
+.header-status{ position: relative; }
+.avatar-status{ padding: 10px; }
+.infor-status{ position: absolute; top: 15px; left: 65px; }
+.select-status{ position: absolute; top: 15px; right: 10px; }
+.stock-status{ padding: 10px 10px 10px 15px; font-size: 13px;}
+.block-images img{ margin-bottom: 10px; }
+.feel-status{ position: relative; padding: 10px 10px 10px 15px; font-size: 12px; border-top: 1px solid rgba(0,0,0,.15); border-bottom: 1px solid rgba(0,0,0,.15); }
+.feel-status ul li a{ padding-bottom: 0; padding-top: 0; }
+
+/*css for comment person*/
+.comment-status{ position: relative; padding-bottom: 15px;}
+#person-comment{ position: relative; display: block; clear: both; }
+.avatar-status{ float: left; clear: both;}
+.infor-comment{ padding: 13px 10px 0px 65px; }
+.content-comment{ border-radius: 1.3em; padding: 6px 12px; font-size: 13px; margin-bottom: 0; }
+.own-status-comment .avatar-status{ float: right; }
+.own-status-comment .infor-comment{ text-align: right; padding-left: 10px; padding-right: 65px;}
+.own-status-comment .infor-comment a{ text-align: right; }
+.own-status-comment .infor-comment .content-comment{ text-align: left; }
+.more-comment{ border-top: 1px solid rgba(0,0,0,.15); }
+.box-input-own-comment{ position: relative; }
+.box-input-own-comment textarea{ padding-right: 60px; }
+.list-action-comment { position: absolute; top: 22px; right: 20px; opacity: 0.8; }
+.list-action-comment ul{ margin-bottom: 0; }
+.list-action-comment ul li a i{ color: #999; font-size: 20px; }
+/**/
