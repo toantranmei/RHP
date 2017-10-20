@@ -38,9 +38,9 @@
 		      <li class="nav-item dropdown active">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posts </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="#">Add New Category</a>
-		          <a class="dropdown-item" href="#">Add New Post</a>
-		          <a class="dropdown-item" href="#">All Post</a>
+		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog">Add New Category</a>
+		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog/manageNews">Add New Post</a>
+		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog/manageNews">All Post</a>
 		        </div>
 		      </li>
 		      <li class="nav-item">

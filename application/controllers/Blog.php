@@ -75,6 +75,10 @@ class Blog extends CI_Controller {
 		$this->Blog_model->deleteById($iddel);
 	}
 
+	public function manageNews()
+	{
+		$this->load->view('admin/manageNews_view');
+	}
 }
 
 /* End of file  */
