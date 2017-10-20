@@ -62,24 +62,34 @@
 					<div class="card">
 						<div class="card-block">
 							<h4>Add News</h4>
-							<form action="<?php echo base_url(); ?>/Blog/manageNews">
+							<form action="<?php echo base_url(); ?>/Blog/addNews" method="POST" enctype="multipart/form-data">
 								<div class="form-group">
 								    <label for="formGroupExampleInput">Title News Post</label>
 								    <input type="text" name="name_news" class="form-control" id="formGroupExampleInput" placeholder="Title News Post">
 								</div>
 								<div class="form-group">
+								    <label for="formGroupExampleInput">Description News Post</label>
+								    <input type="text" name="desc_news" class="form-control" id="formGroupExampleInput" placeholder="Description News Post">
+								</div>
+								<div class="form-group">
 									<label for="formGroupExampleInput">Post Category</label>
-									<select name="id_cate" id="" class="form-control">
-										<option value="">Category One</option>
-										<option value="">Category One</option>
-										<option value="">Category One</option>
-									</select>
+									
+										<select name="id_cate" id="" class="form-control">
+											<?php foreach ($datacate as $key => $value): ?>
+											<option value="<?php echo $value['id']; ?>"><?php echo $value['name_cate']; ?></option>
+											<?php endforeach ?>
+										</select>
+									
 								</div>
 							  	<div class="form-group">
 								    <label for="formGroupExampleInput2">Content Post</label>
 								    <textarea name="content_news" id="content_news" cols="30" rows="10">
 								    	
 								    </textarea>
+								</div>
+								<div class="form-group">
+								    <label for="formGroupExampleInput">Thumbbaild Post</label>
+								    <input type="file" name="image_news" class="form-control" id="formGroupExampleInput" placeholder="Title News Post">
 								</div>
 								<div class="form-group">
 								    <input type="submit" class="btn btn-warning" id="formGroupExampleInput" value="Add News">
@@ -90,6 +100,37 @@
 				</div>
 			</div>
 			<div class="col-md-6">
+				<div class="container">
+					<div class="jumbotron jumbotron-fluid">
+					  <div class="container">
+					    <h1 class="display-3">All News Post</h1>
+					    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+					  </div>
+					</div>
+					<div class="row">
+						<div class="card-group">
+							<?php foreach ($dataNews as $key => $value): ?>
+								<div class="col-md-6">
+									<div class="card">
+										<?php if (empty($value['image_news'])) { ?>
+											<img class="card-img-top img-fluid" src="https://placehold.it/700x400" alt="Card image cap">
+										<?php } 
+										else{  ?>
+											<img class="card-img-top img-fluid" src="<?php echo $value['image_news']; ?>" alt="Card image cap">
+										<?php } ?>
+									    <div class="card-block">
+									      <h4 class="card-title"><?php echo $value['name_news']; ?></h4>
+									      <p class="card-text"><?php echo $value['desc_news']; ?></p>
+									    </div>
+									    <div class="card-footer">
+									      <small class="text-muted"><?php echo "Last update ".date('d/m/Y - G:i A',$value['day_post']); ?></small>
+									    </div>
+								  	</div>
+								</div>
+							<?php endforeach ?>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

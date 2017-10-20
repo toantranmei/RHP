@@ -66,4 +66,25 @@ class Blog_model extends CI_Model{
 
   }
 
+  public function insertNews($name_news,$desc_news,$id_cate,$content_news,$image_news)
+  {
+    $data = array(
+      'name_news' => $name_news,
+      'desc_news' => $desc_news,
+      'id_cate'   => $id_cate,
+      'image_news' => $image_news,
+      'content_news' => $content_news
+    );
+    $this->db->insert('news', $data);
+    $results = $this->db->insert_id();
+  }
+
+  public function loadNews()
+  {
+    $this->db->select('*');
+    $data = $this->db->get('news');
+    $data = $data->result_array();
+    return $data;
+  }
+
 }
