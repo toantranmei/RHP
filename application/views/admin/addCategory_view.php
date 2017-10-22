@@ -38,9 +38,8 @@
 		      <li class="nav-item dropdown active">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posts </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog">Add New Category</a>
-		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog/manageNews">Add New Post</a>
-		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog/manageNews">All Post</a>
+		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog">Manage Category</a>
+		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog/manageNews">Manage Post</a>
 		        </div>
 		      </li>
 		      <li class="nav-item">
@@ -107,25 +106,28 @@
 								      		</div>
 								    	</blockquote>
 							    	</div>
-							    	<div class="col-md-4 text-right actionbtn">
-							    		<ul class="list-inline">
-							    			<li class="list-inline-item defaultbtn">
-							    				<a data-href="<?php echo $value['id'] ?>" class="btn btn-warning btnEditCategory">
-							    					<i class="fa fa-pencil"></i>
-							    				</a>
-							    			</li>
-							    			<li class="list-inline-item defaultbtn">
-							    				<a data-href="<?php echo $value['id'] ?>" class="btn btn-danger btnDeleteCategory">
-							    					<i class="fa fa-remove"></i>
-							    				</a>
-							    			</li>
-							    			<li class="list-inline-item accept-edit" style="display: none;">
-							    				<a data-href="<?php echo $value['id'] ?>" class="saveEditCate btn btn-success">
-							    					<i class="fa fa-check" aria-hidden="true"></i>
-							    				</a>
-							    			</li>
-							    		</ul>
-						    		</div>
+							    	<?php if($value['id'] == 32){ ?>
+							    	<?php } else{ ?>
+							    		<div class="col-md-4 text-right actionbtn">
+								    		<ul class="list-inline">
+								    			<li class="list-inline-item defaultbtn">
+								    				<a data-href="<?php echo $value['id'] ?>" class="btn btn-warning btnEditCategory">
+								    					<i class="fa fa-pencil"></i>
+								    				</a>
+								    			</li>
+								    			<li class="list-inline-item defaultbtn">
+								    				<a data-href="<?php echo $value['id'] ?>" class="btn btn-danger btnDeleteCategory">
+								    					<i class="fa fa-remove"></i>
+								    				</a>
+								    			</li>
+								    			<li class="list-inline-item accept-edit" style="display: none;">
+								    				<a data-href="<?php echo $value['id'] ?>" class="saveEditCate btn btn-success">
+								    					<i class="fa fa-check" aria-hidden="true"></i>
+								    				</a>
+								    			</li>
+								    		</ul>
+							    		</div>
+									<?php } ?>
 						    	</div>
 						  </div>
 						</div>

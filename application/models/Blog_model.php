@@ -62,7 +62,7 @@ class Blog_model extends CI_Model{
       'desc_cate' => $desc_cate
     );
     $this->db->where('id', $id);
-    $this->db->update('category', $dataupdate);
+    return $this->db->update('category', $dataupdate);
 
   }
 
@@ -85,6 +85,67 @@ class Blog_model extends CI_Model{
     $data = $this->db->get('news');
     $data = $data->result_array();
     return $data;
+  }
+
+  public function hasNewsPost($id){
+    $this->db->select('*');
+    $this->db->where('id_cate', $id);
+    $results = $this->db->get('news');
+    $results = $results->result_array();
+    return $results;
+  }
+
+  public function uncateNewsPost($id){
+    $this->db->select('*');
+    $this->db->from('news');
+    $this->db->where('id_cate', $id);
+    $iduncate = 32;
+    $data = array(
+      'id_cate' => $iduncate
+    );
+    return $this->db->update('news', $data);
+  }
+
+  public function getNewsPostById($id)
+  {
+    $this->db->select('*');
+    $this->db->where('id', $id);
+    $results = $this->db->get('news');
+    $results = $results->result_array();
+    return $results;
+  }
+
+  public function getNameCategoryByIdNewsPost($id)
+  {
+    $this->db->select('*');
+    $this->db->from('category');
+    $this->db->join('news', 'news.id_cate = category.id', 'left');
+    $this->db->where('news.id', $id);
+    $results = $this->db->get();
+    $results = $results->result_array();
+    $namecatgory = $results[0]['name_cate'];
+    return $namecatgory;
+
+  }
+
+  public function updateNewsPostById($id,$name_news,$desc_news,$id_cate,$content_news,$image_news)
+  {
+    $data = array(
+      'id' => $id,
+      'name_news' => $name_news,
+      'desc_news' => $desc_news,
+      'id_cate'   => $id_cate,
+      'image_news' => $image_news,
+      'content_news' => $content_news
+    );
+    $this->db->where('id', $id);
+    return $this->db->update('news', $data);
+  }
+
+  public function deleteNewsPostById($id)
+  {
+    $this->db->where('id', $id);
+    return $this->db->delete('news');
   }
 
 }

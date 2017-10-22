@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Add News Category | Social Network RHP Team</title>
+	<title>Fail Action | Social Network RHP Team</title>
+	<meta http-equiv=”refresh” content="1;url=<?php echo base_url(); ?>/Blog/manageNews">
 	<meta charset="utf-8">
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
 	<meta content="Add news category RHP Team" name="keywords">
@@ -39,8 +40,9 @@
 		      <li class="nav-item dropdown active">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posts </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog">Manage Category</a>
-		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog/manageNews">Manage Post</a>
+		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog">Add New Category</a>
+		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog/newsPost">Add New Post</a>
+		          <a class="dropdown-item" href="<?php echo base_url(); ?>/Blog/manageNews">All Post</a>
 		        </div>
 		      </li>
 		      <li class="nav-item">
@@ -56,89 +58,9 @@
 	</div>
 	<div class="content-cate">
 		<div class="row">
-			<div class="col-md-6">
-				<div class="container">
-					<div class="card">
-						<div class="card-block">
-							<h4>Add News</h4>
-							<form action="<?php echo base_url(); ?>/Blog/addNews" method="POST" enctype="multipart/form-data">
-								<div class="form-group">
-								    <label for="formGroupExampleInput">Title News Post</label>
-								    <input type="text" name="name_news" class="form-control" id="formGroupExampleInput" placeholder="Title News Post">
-								</div>
-								<div class="form-group">
-								    <label for="formGroupExampleInput">Description News Post</label>
-								    <input type="text" name="desc_news" class="form-control" id="formGroupExampleInput" placeholder="Description News Post">
-								</div>
-								<div class="form-group">
-									<label for="formGroupExampleInput">Post Category</label>
-									
-										<select name="id_cate" id="" class="form-control">
-											<?php foreach ($datacate as $key => $cate): ?>
-											<option value="<?php echo $cate['id']; ?>"><?php echo $cate['name_cate']; ?></option>
-											<?php endforeach ?>
-										</select>
-									
-								</div>
-							  	<div class="form-group">
-								    <label for="formGroupExampleInput2">Content Post</label>
-								    <textarea name="content_news" id="content_news" cols="30" rows="10">
-								    	
-								    </textarea>
-								</div>
-								<div class="form-group">
-								    <label for="formGroupExampleInput">Thumbbaild Post</label>
-								    <input type="file" name="image_news" class="form-control" id="formGroupExampleInput" placeholder="Title News Post">
-								</div>
-								<div class="form-group">
-								    <input type="submit" class="btn btn-warning" id="formGroupExampleInput" value="Add News">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="container">
-					<div class="jumbotron jumbotron-fluid">
-					  <div class="container">
-					    <h1 class="display-3">All News Post</h1>
-					    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-					  </div>
-					</div>
-					
-					<div class="row">
-						<?php foreach ($dataNews as $key => $value): ?>
-						<div class="col-md-6">
-							<div class="card-group">
-								<div class="card box-news" style="position: relative;">
-									<?php if ($value['image_news'] == 'http://localhost:8888/RHP/assets/uploads/') { ?>
-										<img class="card-img-top img-fluid" src="https://placehold.it/700x400" alt="Card image cap">
-									<?php } 
-									else{  ?>
-										<img class="card-img-top img-fluid" src="<?php echo $value['image_news']; ?>" alt="Card image cap">
-									<?php } ?>
-								    <div class="card-block">
-								      <h4 class="card-title"><?php echo $value['name_news']; ?></h4>
-								      <p class="card-text"><?php echo $value['desc_news']; ?></p>
-								    </div>
-								    <div class="card-footer">
-								      <small class="text-muted"><?php echo "Last update ".date('d/m/Y - G:i A',$value['day_post']); ?></small>
-								    </div>
-								    <div class="remove-box" style="position: absolute; right: 0;
-								    top: 0;">
-								    	<a href="<?php echo base_url(); ?>/Blog/deleteNewsPost/<?php echo $value['id'] ?>" class="btn btn-danger"><i class="fa fa-remove"></i></a>
-								    </div>
-								    <div class="edit-box" style="position: absolute; left: 0;
-								    top:0;">
-								    	<a href="<?php echo base_url(); ?>/Blog/editNewsPost/<?php echo $value['id'] ?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
-								    </div>
-							  	</div>
-							</div>
-						</div>
-						<?php endforeach ?>
-					</div>
-					
+			<div class="col-md-8 push-md-2">
+				<div class="alert alert-success" role="alert">
+					<strong>Oh snap!</strong> Change a few things up and try submitting again.
 				</div>
 			</div>
 		</div>
