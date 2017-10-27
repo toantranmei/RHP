@@ -31,6 +31,13 @@ body{
     top: 200px;
 }
 
+.logo i{
+    font-size: 120px;
+    vertical-align: middle;
+    color: #fff;
+    opacity: 0.3;
+}
+
 .logo img{
     width: 150px;
     height: 150px;
@@ -205,7 +212,8 @@ body{
     font-size: 40px;
     color: #fff;
     text-align: center;
-    line-height:80px
+    line-height:40px;
+    margin-top: 30px;
 }
 
 .box_hob .box-hob p{
@@ -689,4 +697,259 @@ table_details_skill .col2{
     height: 200px;
     border-radius: 5px;
     box-shadow: 2px 0px rgba(0,0,0,.1);
+}
+
+
+/*css for client sky*/
+.clients_sky{
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    background: #ECECEC;
+}
+
+.clients_sky .title{
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.clients_sky .title:after{
+    position: absolute;
+    bottom: 6px;
+    content: " ";
+    height: 5px;
+    opacity: .8;
+    background: #000;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clients_sky .icon_say{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #E64B40;
+    border-radius: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+.clients_sky .icon_say i{
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.clients_sky .box_say{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 120px
+}
+
+.clients_sky .dot_list{
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.clients_sky .dot_list li{
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.clients_sky .dot_list .dot{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #E64B40;
+    background: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.clients_sky .dot_list li.active .dot{
+    background: #E64B40;
+}
+
+/*css for enjoy sky*/
+
+.enjoy_sky{
+    background: #2c3e50;
+    padding: 150px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.enjoy_sky h1{
+    font-size: 50px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 50px
+}
+
+.enjoy_sky .btnLink_hire{
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+/*css for say talk best */
+
+.saytalk_best_sky{
+    background: rgba(44,62,80,.7);
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.saytalk_best_sky .title{
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.saytalk_best_sky .title:after{
+    position: absolute;
+    bottom: 6px;
+    content: " ";
+    height: 5px;
+    opacity: .8;
+    background: #fff;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.saytalk_best_sky p{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/*css for contact*/
+
+.contact_sky{
+    position: relative;
+    padding: 100px 0;
+    text-align: left;
+    background: #ECECEC;
+}
+
+.contact_sky .title{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.contact_sky .title:after{
+    position: absolute;
+    bottom: 6px;
+    content: " ";
+    height: 5px;
+    opacity: .8;
+    background: #000;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact_sky .icon{
+    float: left;
+    width: 70px;
+    height: 70px;
+    background: #E64B40;
+    color: #fff;
+    line-height: 70px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact_sky .icon i{
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.contact_sky .desc_icon{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+
+.contact_sky span{
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.contact_sky .form_contact_private{
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.contact_sky .form_contact_private input[type="text"], .contact_sky .form_contact_private textarea{
+    font-size: 14px;
+    background: rgba(153,153,153,.1)
+}
+
+.contact_sky .form_contact_private label{
+    font-weight: 600;
+}
+
+.contact_sky .form_contact_private textarea{
+    resize: none;
+}
+
+.contact_sky .form_contact_private input[type="submit"]{
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*css for footer sky*/
+
+.footer_sky{
+    background: rgba(44,62,80,.3);
+    position: relative;
+    height: 90px;
+    line-height: 90px;
+    margin-top: -5px;
+}
+
+.footer_sky span{
+}
+
+.footer_sky .list_social_sky{
+    margin: 0;
+}
+
+.footer_sky .list_social_sky li a i{
+    color: rgb(44,62,80);
 }
