@@ -953,3 +953,300 @@ table_details_skill .col2{
 .footer_sky .list_social_sky li a i{
     color: rgb(44,62,80);
 }
+
+.footer_sky .box_f_social{
+    text-align: right;
+}
+
+
+@media (min-width: 981px) and (max-width: 1200px) { 
+    .box_process.two_pr, .box_process.four_pr,.box_process.edu_two {
+        left: 9%;
+    }
+}
+@media (min-width:960px){
+    /* styles for browsers larger than 960px; */
+    .header{
+        height: 1000px;
+        background: url(../images/images_toan/bg1.jpeg) no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+        position: relative;
+    }
+    .name_sky{
+        position: absolute;
+        top: 490px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0px 35px;
+        border: 10px solid #fff;
+    }
+    .name_sky span{
+        font-size: 37px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 15px;
+    }
+    .job_sky{
+        position: absolute;
+        top: 610px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 25px;
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+@media (min-width:1440px){
+    /* styles for browsers larger than 1440px; */
+    .name_sky{
+        position: absolute;
+        top: 490px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0px 15px;
+        border: 10px solid #fff;
+    }
+    .name_sky span{
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 15px;
+    }
+    .job_sky{
+        position: absolute;
+        top: 610px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+}
+@media (max-width:480px){
+   /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .header{
+        height: 475px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        top: 100px;
+    }
+    .logo i {
+        font-size: 50px;
+        vertical-align: middle;
+        color: #fff;
+        opacity: 0.3;
+    }
+    .name_sky {
+        border: 2px solid #fff;
+        top: 220px;
+    }
+    .name_sky span {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: normal;
+    }
+    .job_sky {
+        top: 260px;
+        font-size: 13px;
+        font-weight: normal;
+    }
+    .job_sky .dot {
+        width: 5px;
+        height: 5px;
+    }
+    .box-social {
+        top: 290px;
+    }
+    .box-social li:nth-child(2),.box-social li:nth-child(3){
+        display: none;
+    }
+    .list_social_sky .item {
+        font-size: 13px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .list_social_sky .item i {
+        font-size: 13px;
+    }
+    .avatar_sky {
+        width: 150px;
+        height: 150px;
+        bottom: -75px;
+    }
+    .resume_sky{ display: none; }
+    .skill_sky .macbook_bg {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about_sky {
+        padding-top: 130px;
+        padding-bottom: 0;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .dwn-remuse a {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .box_hob .box-hob {
+        margin: 20px auto;
+    }
+    .skill_sky .center {
+        display: none;
+    }
+    .skill_sky .section_details {
+        margin: 0;
+    }
+    .skill_sky .macbook_bg {
+        height: 180px;
+    }
+    .skill_sky .list_adobe_use {
+        list-style: none;
+        position: absolute;
+        top: 39px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .skill_sky .list_adobe_use img {
+        width: 30px;
+        height: 30px;
+    }
+    .section_details a.but {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .works_sky .content .image_element {
+        width: 100%;
+    }
+    .works_sky .navbar_services {
+        margin-bottom: 0;
+    }
+    .works_sky .navbar_services li {
+        height: 55px;
+    }
+    .working_process_sky .content_process.top {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .box_information{
+        margin-bottom: 20px;
+    }
+    .box_information:last-child{
+        margin-bottom: 0;
+    }
+    .footer_sky span {
+        display: none;
+    }
+    .footer_sky .box_f_social{
+        text-align: center;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+   /* default iPad screens */
+    .header{ height: 1024px; }
+    .name_sky span {
+        font-size: 45px;
+        letter-spacing: normal;
+        font-weight: 500;
+    }
+    .box-social {
+        top: 610px;
+    }
+    .job_sky {
+        position: absolute;
+        top: 550px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .saylife {
+        text-align: center;
+    }
+    .dwn-remuse {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .resume_sky{ 
+        display: none;
+    }
+    .about_sky{
+        padding-bottom: 0;
+    }
+    .skill_sky .center {
+        margin-bottom: 30px;
+    }
+    .skill_sky .macbook_bg {
+        width: auto;
+        margin-top: 35px;
+        height: 260px;
+    }
+    .skill_sky .list_adobe_use {
+        transform: translateX(-50%);
+    }
+    .but{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .skill_sky .list_adobe_use img {
+        width: 30px;
+        height: 30px;
+    }
+    .working_process_sky .content_process.top {
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    .works_sky .navbar_services{
+        margin: 0;
+    }
+    .works_sky .navbar_services li {
+        height: 55px;
+    }
+    .works_sky .content .image_element img {
+        height: 160px;
+    }
+    .works_sky .content .image_element {
+        width: 100%;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+    .contact_sky .icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .contact_sky .desc_icon {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 18px;
+        margin-left: 60px;
+        text-transform: uppercase;
+    }
+    .contact_sky span.root{
+        display: none;
+    }
+    .contact_sky span {
+        margin-left: 10px;
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .footer_sky span{
+        font-size: 10px;
+    }
+    
+}
