@@ -1,0 +1,692 @@
+*{ padding: 0; margin: 0; }
+body{
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    position: relative;
+}
+
+.header{
+    height: 1200px;
+    background: url(../images/images_toan/bg1.jpeg) no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    position: relative;
+}
+
+.wrap-header{
+    background: rgba(44,62,80,.8);
+    height: 100%;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e74c3c;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    line-height: 200px;
+    text-align: center;
+    top: 200px;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+}
+
+.name_sky{
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 15px;
+    border: 10px solid #fff;
+}
+
+.name_sky span{
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 15px;
+}
+
+.job_sky{
+    position: absolute;
+    top: 610px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.job_sky span, .job_sky div{
+    display: inline-block;
+}
+.job_sky .dot{
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.list_social_sky{
+    list-style: none;
+}
+
+
+.box-social{
+    position: absolute;
+    top: 670px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.list_social_sky .item{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    margin-right: 5px;
+}
+
+.list_social_sky .item:last-child{
+    margin-right: 0;
+}
+
+.list_social_sky .item i{
+    font-size: 18px;
+    color: #fff;
+}
+
+.avatar_sky{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    overflow: hidden;
+    left: 50%;
+    bottom: -150px;
+    transform: translateX(-50%);
+}
+
+.about_sky{
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.about_sky .title{
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    opacity: 0.8;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.about_sky .title:after{
+    position: absolute;
+    bottom: 6px;
+    content: " ";
+    height: 5px;
+    opacity: .8;
+    background: #000;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about_sky .desc{
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about_sky .hoby{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.infor{
+    margin-bottom: 40px;
+}
+.infor tr{
+    height: 35px;
+    vertical-align: top;
+}
+.infor .tt{
+    font-weight: bold;
+    width: 100px;
+    font-size: 14px;
+}
+
+.infor .de{
+    text-align: left;
+    font-size: 14px;
+}
+
+.box_hob h3{
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.box_hob .box-hob{
+    width: 150px;
+    height: 150px;
+    background: rgb(44,62,80);
+    border-radius: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box_hob .box-hob i{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    line-height:80px
+}
+
+.box_hob .box-hob p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.saylife{
+    margin: 30px 0;
+    font-family: Pacifico;
+    font-size: 30px;
+    text-align: left;
+}
+
+.dwn-remuse{
+    text-align: left;
+}
+
+.dwn-remuse a{
+    background: #e74c3c;
+    border-color: #e74c3c;
+    height: 50px;
+    line-height: 30px;
+    width: 300px;
+}
+
+
+/*Css resume */
+.resume_sky{
+    background: #ECECEC;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    height: 1350px;
+}
+
+.resume_sky .title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.resume_sky .title:after{
+    position: absolute;
+    bottom: 6px;
+    content: " ";
+    height: 5px;
+    opacity: .8;
+    background: #000;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.process_resume{
+    position: relative;
+}
+
+.process_resume .title_process{
+    background: #D3D5E1;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3D4654;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.process_resume .title_process.edu{
+    top: 530px;
+    z-index: 2;
+}
+
+.process_resume .process_bar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 3px;
+    border-radius: 1px;
+    height: 1010px;
+    background: #D3D5E1;
+    
+}
+
+.process_resume .icon_exper{
+    background: #E64B40;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    border-radius: 100%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.process_resume .icon_educa{
+    background: #E64B40;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 590px;
+    border-radius: 100%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.process_resume .icon_bookmark{
+    background: #E64B40;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 1010px;
+    border-radius: 100%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.process_resume i{
+    color: #fff;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.process_resume .dot_process{
+    width: 10px;
+    height: 10px;
+    background: #E64B40;
+    border-radius: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.one_pr{
+    top: 140px;
+}
+
+.two_pr{
+    top: 200px;
+}
+
+.three_pr{
+    top: 330px;
+}
+
+.four_pr{
+    top: 390px
+}
+
+.edu_one{
+    top: 680px;
+}
+
+.edu_two{
+    top: 740px;
+}
+
+.edu_three{
+    top: 870px;
+}
+
+.box_process{
+    position: absolute;
+    text-align: left;
+    width: 350px;
+}
+
+.box_process.one_pr{
+    left: 54%;
+    top: 135px;
+}
+
+.box_process.two_pr{
+    text-align: right;
+    left: 15%;
+    top: 195px;
+}
+
+.box_process.three_pr{
+    left: 54%;
+    top: 325px;
+}
+
+.box_process.four_pr{
+    text-align: right;
+    left: 15%;
+    top: 385px;
+}
+
+.box_process.edu_one{
+    left: 54%;
+    top: 675px;
+}
+
+.box_process.edu_two{
+    text-align: right;
+    left: 15%;
+    top: 735px;
+}
+
+.box_process.edu_three{
+    left: 54%;
+    top: 865px;
+}
+
+.box_process .name_process{
+    color: #434C54;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box_process .adress_process{
+    color: #434c54;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+/*css for skill*/
+.skill_sky{
+    padding: 100px 0;
+    text-align: center;
+}
+.skill_sky .title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.skill_sky .title:after{
+    position: absolute;
+    bottom: 6px;
+    content: " ";
+    height: 5px;
+    opacity: .8;
+    background: #000;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill_sky .box_skill{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: #000;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    box-shadow: 2px rgba(0,0,0,.8);
+    line-height: 240px;
+}
+
+.skill_sky .center{
+    text-align: center;
+}
+
+.skill_sky .html{
+    background: #e67e22;
+}
+
+.skill_sky .js{
+    background: #3498db;
+}
+
+.skill_sky .php{
+    background: #34495e;
+}
+
+.skill_sky .sw{
+    background: #1abc9c;
+}
+
+.skill_sky .box_skill i{
+    font-size: 90px;
+}
+
+.skill_sky .section_details{
+    margin-top: 50px;
+    position: relative;
+}
+
+.skill_sky .macbook_bg{
+    width: 500px;
+    height: 400px;
+    background: url(../images/images_toan/macbook.png) no-repeat;
+    background-size: contain;
+}
+
+.skill_sky .list_adobe_use{
+    list-style: none;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-57%);
+}
+
+.skill_sky .list_adobe_use li{
+    display: inline-block
+}
+
+.skill_sky .list_adobe_use p{
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.skill_sky .list_adobe_use img{
+    width: 40px;
+    height: 40px;
+}
+
+.table_details_skill{
+    position: relative;
+    font-size: 14px
+}
+
+.table_details_skill tr{
+    height: 50px;
+    text-align: left;
+}
+
+table_details_skill .col2{
+    margin-left: 30px;
+}
+
+.table_details_skill .dot{
+    width: 10px;
+    height: 10px;
+    background: #000;
+}
+
+.table_details_skill .dot_html{
+    background: #e67e22;
+}
+
+.table_details_skill .dot_js{
+    background: #3498db;
+}
+
+.table_details_skill .dot_php{
+    background: #34495e;
+}
+
+.table_details_skill .dot_sw{
+    background: #1abc9c;
+}
+
+.table_details_skill .text-bold{
+    font-weight: 600;
+}
+
+
+/*css for working process*/
+
+.working_process_sky{
+    background: #2c3e50;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.working_process_sky .content_process.top{
+    padding-top: 40px;
+}
+
+.working_process_sky .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.working_process_sky .name_desc_process{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.working_process_sky .box_desc_process{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.working_process_sky .box_desc_process i{
+    font-size: 40px;
+}
+
+
+/*css for my works*/
+.works_sky{
+    position: relative;
+    padding: 100px 0;
+    text-align: center
+}
+
+.works_sky .title{
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.works_sky .title:after{
+    position: absolute;
+    bottom: 6px;
+    content: " ";
+    height: 5px;
+    opacity: .8;
+    background: #000;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.works_sky .navbar_services{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.works_sky .navbar_services li{
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.works_sky .navbar_services li a{
+    padding: 15px 20px;
+    background: #e67e22;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.works_sky .navbar_services li a:hover{
+    text-decoration: none;
+}
+
+.works_sky .content .image_element{
+    width: 97%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.works_sky .content .image_element img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 0px rgba(0,0,0,.1);
+}
