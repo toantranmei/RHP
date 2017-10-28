@@ -206,6 +206,7 @@ body{
     border-radius: 100%;
     margin-bottom: 20px;
     text-align: center;
+    margin: 0 auto 20px auto;
 }
 
 .box_hob .box-hob i{
@@ -958,78 +959,8 @@ table_details_skill .col2{
     text-align: right;
 }
 
-
-@media (min-width: 981px) and (max-width: 1200px) { 
-    .box_process.two_pr, .box_process.four_pr,.box_process.edu_two {
-        left: 9%;
-    }
-}
-@media (min-width:960px){
-    /* styles for browsers larger than 960px; */
-    .header{
-        height: 1000px;
-        background: url(../images/images_toan/bg1.jpeg) no-repeat;
-        background-size: cover;
-        opacity: 0.9;
-        position: relative;
-    }
-    .name_sky{
-        position: absolute;
-        top: 490px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 0px 35px;
-        border: 10px solid #fff;
-    }
-    .name_sky span{
-        font-size: 37px;
-        text-transform: uppercase;
-        color: #fff;
-        font-weight: 700;
-        letter-spacing: 15px;
-    }
-    .job_sky{
-        position: absolute;
-        top: 610px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 25px;
-        font-weight: 500;
-        color: #fff;
-        text-transform: uppercase;
-    }
-}
-@media (min-width:1440px){
-    /* styles for browsers larger than 1440px; */
-    .name_sky{
-        position: absolute;
-        top: 490px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 0px 15px;
-        border: 10px solid #fff;
-    }
-    .name_sky span{
-        font-size: 60px;
-        text-transform: uppercase;
-        color: #fff;
-        font-weight: 700;
-        letter-spacing: 15px;
-    }
-    .job_sky{
-        position: absolute;
-        top: 610px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 30px;
-        font-weight: 500;
-        color: #fff;
-        text-transform: uppercase;
-    }
-    
-}
-@media (max-width:480px){
-   /* styles for mobile browsers smaller than 480px; (iPhone) */
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) { 
     .header{
         height: 475px;
     }
@@ -1089,6 +1020,7 @@ table_details_skill .col2{
     .skill_sky .macbook_bg {
         width: 90%;
         margin: 0 auto;
+        background-position: 50%;
     }
     .about_sky {
         padding-top: 130px;
@@ -1153,27 +1085,28 @@ table_details_skill .col2{
     .footer_sky .box_f_social{
         text-align: center;
     }
+
 }
-@media (min-width: 481px) and (max-width: 768px){
-   /* default iPad screens */
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { 
     .header{ height: 1024px; }
     .name_sky span {
-        font-size: 45px;
+        font-size: 37px;
         letter-spacing: normal;
         font-weight: 500;
     }
     .box-social {
-        top: 610px;
+        top: 570px;
     }
     .job_sky {
-        position: absolute;
-        top: 550px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 30px;
+        top: 535px;
+        font-size: 18px;
         font-weight: 400;
-        color: #fff;
-        text-transform: uppercase;
+    }
+    .job_sky .dot{
+        width: 10px;
+        height: 10px;
     }
     .saylife {
         text-align: center;
@@ -1195,9 +1128,11 @@ table_details_skill .col2{
         width: auto;
         margin-top: 35px;
         height: 260px;
+        background-position: 50%;
     }
     .skill_sky .list_adobe_use {
         transform: translateX(-50%);
+        top: 120px;
     }
     .but{
         width: 100%;
@@ -1248,5 +1183,167 @@ table_details_skill .col2{
     .footer_sky span{
         font-size: 10px;
     }
-    
 }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .header{
+        height: 980px;
+    }
+    .name_sky span {
+        font-size: 50px;
+        letter-spacing: normal;
+    }
+    .job_sky {
+        top: 550px;
+        font-size: 25px;
+    }
+    .job_sky .dot {
+        width: 10px;
+        height: 10px;
+    }
+    .box-social {
+        top: 600px;
+    }
+    .about_sky{
+        padding-bottom: 0;
+    }
+    .saylife{
+        text-align: center;
+    }
+    .dwn-remuse{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .resume_sky{
+        display: none;
+    }
+    .skill_sky .center {
+        display: none;
+    }
+    .skill_sky .macbook_bg{
+        width: 100%;
+        height: 200px;
+    }
+    .skill_sky .list_adobe_use {
+        top: 51px;
+        transform: translateX(-50%);
+    }
+    .skill_sky .list_adobe_use img {
+        width: 30px;
+        height: 30px;
+    }
+    .skill_sky .box_details_skills{
+        padding-top: 0px!important;
+    }
+    .skill_sky .but{
+        width: 100%;
+        margin: 5px 0;
+    }
+    .navbar_services{
+        margin-bottom: 0!important;
+    }
+    .working_process_sky .content_process.top {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .works_sky .navbar_services li {
+        height: 55px;
+    }
+    .works_sky .content .image_element{
+        height: auto;
+        width: 100%;
+    }
+    .works_sky .content .image_element img{
+        height: 150px;
+    }
+    .contact_sky .icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+    }
+    .contact_sky .icon i {
+        font-size: 15px;
+    }
+    .contact_sky .desc_icon {
+        font-weight: 400;
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .contact_sky span{
+        margin-left: 0;
+        font-size: 12px;
+    }
+    .contact_sky .box_desc{
+        margin-left: 50px;
+    }
+    .contact_sky .box_desc .root{
+        display: none;
+    }
+    .footer_sky .box_f_social li:nth-child(2){
+        display: none;
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .header{
+        height: 980px;
+    }
+    .name_sky span {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    .job_sky {
+        top: 550px;
+        font-size: 28px;
+    }
+    .box-social{
+        top: 600px;
+    }
+    .saylife {
+        font-size: 25px;
+        text-align: center;
+    }
+    .box_process.two_pr {
+        left: 9%;
+    }
+    .box_process.four_pr {
+        left: 9%;
+    }
+    .box_process.edu_two {
+        left: 9%;
+    }
+    .skill_sky .macbook_bg{
+        width: 100%;
+        height: 270px;
+    }
+    .skill_sky .list_adobe_use{
+        transform: translateX(-50%);
+    }
+    .contact_sky span{
+        margin-left: 0;
+        font-size: 13px;
+    }
+    .contact_sky .box_desc{
+        margin-left: 80px;
+    }
+    .contact_sky .box_desc .root{
+        display: none;
+    }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .job_sky{
+        top: 565px;
+    }
+    .box-social{
+        top: 630px;
+    }
+    .name_sky span{
+        font-size: 61px;
+    }
+}
+
